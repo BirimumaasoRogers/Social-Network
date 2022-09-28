@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>The Social Network</title>
+        <meta name="author" content="Birimumaaso Rogers">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- BOXICONS -->
+        <link rel="stylesheet" href="/public/css/boxicons-2.1.2/css/boxicons.min.css">
+        <!-- STYLE CSS -->
+        <link rel="stylesheet" href="/public/css/style.css">
+    </head>
+    <body>
+        <!---------------- NAV BAR ------------------>
+        <nav>
+            <div class="container">
+                <h2 class="logo">socialNetwork</h2>
+                <div class="search-bar">
+                    <i class="bx bx-search"></i>
+                    <input type="search" placeholder="Search for creators, inspirations and projects">
+                </div>
+                <div class="create">
+                    <label class="btn btn-primary" id="create-profile">Create Profile</label>
+                    <div class="profile-picture">
+                        <img src="/public/images/testimonials-1.jpg">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!---------------- MAIN ------------>
+        <main>
+            <div class="container">
+                <!---------------- LEFT ------------>
+                <div class="left">
+                    <a class="profile">
+                        <div class="profile-picture">
+                            <img src="/public/images/testimonials-1.jpg">
+                        </div>
+                        <div class="handle">
+                            <h4>Scott McAllister</h4>
+                            <p class="text-muted">@scottMC99</p>
+                        </div>
+                    </a>
+
+                    <!---------------- SIDEBAR ------------>
+                    <div class="sidebar">
+                        <a class="menu-item active">
+                            <span><i class="bx bx-home"></i></span><h3>Home</h3>
+                        </a>
+                        <a class="menu-item">
+                            <span><i class="bx bx-compass"></i></span><h3>Explore</h3>
+                        </a>
+                        <a class="menu-item" id="notifications">
+                            <span><i class="bx bx-bell"><small class="notification-count">5+</small></i></span><h3>Notifications</h3>
+                            <!-- ------------- Notifications Pop-Up ------------- -->
+                            <div class="notifications-popup">
+                                <div>
+                                    <div class="profile-picture">
+                                        <img src="/public/images/testimonials-3.jpg">
+                                    </div>
+                                    <div class="notification-body">
+                                        <b>Keke Palmer</b> accepted your friend request
+                                        <small class="text-muted">2 DAYS AGO</small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="profile-picture">
+                                        <img src="/public/images/testimonials-4.jpg">
+                                    </div>
+                                    <div class="notification-body">
+                                        <b>Jon Doe</b> commented on your post
+                                        <small class="text-muted">20 MINUTES AGO</small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="profile-picture">
+                                        <img src="/public/images/testimonials-2.jpg">
+                                    </div>
+                                    <div class="notification-body">
+                                        <b>Kristena Zhao</b> sent you a friend request
+                                        <small class="text-muted">5 DAYS AGO</small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="profile-picture">
+                                        <img src="/public/images/person_3.jpg">
+                                    </div>
+                                    <div class="notification-body">
+                                        <b>Mike Kors</b> reposted your story
+                                        <small class="text-muted">3 MINUTES AGO</small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="profile-picture">
+                                        <img src="/public/images/person_4.jpg">
+                                    </div>
+                                    <div class="notification-body">
+                                        <b>Duncan Smith</b> commented on a post you were tagged in
+                                        <small class="text-muted">7 HOURS AGO</small>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </a>
+                        <a class="menu-item">
+                            <span><i class="bx bx-envelope"></i></span><h3>Messages</h3>
+                        </a>
+                        <a class="menu-item" id="profile-notifications">
+                            <span><i class="bx bx-user"></i></span><h3>Profile</h3>
+                        </a>
+                        <a class="menu-item" id="theme">
+                            <span><i class="bx bx-paint"></i></span><h3>Theme</h3>
+                        </a>
+                        <a class="menu-item">
+                            <span><i class="bx bx-cog"></i></span><h3>Settings</h3>
+                        </a>
+                    </div>
+                    <!-- ------------- END OF SIDEBAR ------------>
+                    <label class="btn btn-primary" for="create-post">Create Post</label>
+                </div>
+
+
+                <!---------------- MIDDLE ------------>
+                <div class="middle">
+                    <form class="create-post">
+                        <div class="profile-picture">
+                            <img src="/public/images/testimonials-1.jpg">
+                        </div>
+                        <input type="text" placeholder="What's on your mind?" id="create-post">
+                        <input type="submit" value="Post" class="btn btn-primary" id="post">
+                    </form>
+
+
+                    <!-- ------------- FEEDS --------------- -->
+                    <div class="feeds">
+                        <!-- ------------- FEED 1 --------------- -->
+                        <div class="feed">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-picture">
+                                        <img src="/public/images/Levixone.jpeg">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Levixone</h3>
+                                        <small>Kampala, 15 MINUTES AGO</small>
+                                    </div>
+                                </div>
+                                <span class="edit"><i class="bx bx-menu"></i></span>
+                            </div>
+
+                            <div class="photo">
+                                <img src="/public/images/insta-1.jpg" alt="">
+                            </div>
+
+                            <div class="action-button">
+                                <div class="interaction-button">
+                                    <span><i class="bx bx-heart heart"></i></span>
+                                    <span><i class="bx bx-comment"></i></span>
+                                    <span><i class="bx bx-share"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <span><i class="bx bx-bookmark"></i></span>
+                                </div>
+                            </div>
+                            <div class="caption">
+                                <p><b>Levixone</b> Great lunch with my team <span class="hashtag">#lifestyle</span></p>
+                            </div>
+                            <div class="text-muted comment">View all 1534 comments</div>
+                        </div>
+
+                        <!-- ------------- FEED 2 --------------- -->
+                        <div class="feed">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-picture">
+                                        <img src="/public/images/testimonials-1.jpg">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Scott McAllister</h3>
+                                        <small>Ntinda, 5 MINUTES AGO</small>
+                                    </div>
+                                </div>
+                                <span class="edit"><i class="bx bx-menu"></i></span>
+                            </div>
+                            <div class="caption">
+                                <p>Today has been a great day at office, time to put my feet up and relax</p>
+                            </div>
+
+                            <div class="action-button">
+                                <div class="interaction-button">
+                                    <span><i class="bx bx-heart heart"></i></span>
+                                    <span><i class="bx bx-comment"></i></span>
+                                    <span><i class="bx bx-share"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <span><i class="bx bx-bookmark"></i></span>
+                                </div>
+                            </div>
+                            
+                            <div class="text-muted comment">View all 8 comments</div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <!---------------- RIGHT ------------>
+                <div class="right">
+                    <div class="profiles" id="profiles">
+                        <div class="heading">
+                            <h4>Profile</h4>
+                            <div class="profile-action-btns">
+                                <span><i class="bx bx-menu"></i></span>
+                            </div>
+                        </div>   
+                        <!-- -------------SEARCH BAR ------------ -->
+                        <div class="search-bar">
+                            <i class="bx bx-search"></i>
+                            <input type="search" placeholder="Search profiles" id="profile-search">
+                        </div>
+                        <!-- -------------PROFILE CATEGORY ------------ -->
+                        <div class="category">
+                            <h6 class="active">Private</h6>
+                            <h6>Public</h6>
+                        </div>
+                        <!-- -------------PROFILES ------------ -->
+                        <div class="profiles-section">
+                            <div class="profile-card">
+                                <div class="profile-picture">
+                                    <img src="/public/images/testimonials-5.jpg">
+                                </div>
+                                <div class="profile-body">
+                                    <div class="profile-body-head">
+                                        <h5>Josh Heed</h5>
+                                        <div class="profile-action-btns">
+                                            <span><i class="bx bx-edit"></i></span>
+                                            <span><i class="bx bx-trash btn-delete"></i></span>
+                                        </div>
+                                    </div>
+                                    <p class="text-muted">Hey, I'm a junior software developer.</p>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>    
+                        <!-- -------------END OF PROFILES ------------ -->
+
+                    <!-- ------------- FRIEND REQUESTS ------------ -->
+                    <div class="friend-requests">
+                        <h4>Requests</h4>
+                        <div class="request">
+                            <div class="info">
+                                <div class="profile-picture">
+                                    <img src="/public/images/testimonials-2.jpg">
+                                </div>
+                                <div>
+                                    <h5>Kristena Zhao</h5>
+                                    <p class="text-muted">
+                                        8 mutual friends
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="action">
+                                <button class="btn btn-primary">Accept</button>
+                                <button class="btn">Decline</button>
+                            </div>
+                        </div>
+
+                        <div class="request">
+                            <div class="info">
+                                <div class="profile-picture">
+                                    <img src="/public/images/staff-3.jpg">
+                                </div>
+                                <div>
+                                    <h5>Bruce Martinez</h5>
+                                    <p class="text-muted">
+                                        1 mutual friends
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="action">
+                                <button class="btn btn-primary">Accept</button>
+                                <button class="btn">Decline</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- --------------- END OF RIGHT ----------------->
+            </div>
+        </main>
+
+<!-- ============================= CREATE PROFILE ========================= -->
+<div class="create-profile">
+    <div class="card">
+        <h2>Create new profile</h2>
+        <p class="text-muted">Fill in form below</p>
+
+        <form class="profile-form">
+            <div class="content">
+                <div class="form-data">
+                    <h4>Profile Photo</h4>
+                    <div class="p-input">
+                        <img id="photo" src="#" alt="  " />
+                        <label for="imgInp" class="btn btn-primary">Select Image</label>
+                        <input accept="image/*" type="file" id="imgInp"  name="upload" />
+                    </div>
+                </div>
+                <div class="form-data">
+                    <h4>Name</h4>
+                    <div class="f-input">
+                        <i class="bx bxs-user"></i>
+                        <input type="text" placeholder='Full name' id="name">
+                    </div>
+                </div>
+                <div class="form-data">
+                    <h4>Email</h4>
+                    <div class="f-input">
+                        <i class="bx bxs-envelope"></i>
+                        <input type="text" placeholder='Email Address' id="email">
+                    </div>
+                </div>
+                <div class="form-data">
+                    <h4>Personal Statement</h4>
+                    <div class="f-input">
+                        <i class="bx bxs-book"></i>
+                        <textarea id="personal-statement"></textarea>
+                    </div>
+                </div>
+            </div>  
+            <input class="btn btn-primary" type="button" value="Submit" id="submit-profile" >         
+        </form>
+    </div>
+</div>        
+
+<!-- ============================= THEME CUSTOMUZATION ========================= -->
+<div class="customize-theme">
+    <div class="card">
+        <h2>Customize Your View</h2>
+        <p class="text-muted">Manage your font-size, color, and background</p>
+
+        <!-- --------Font Sizes ---------- -->
+        <div class="font-size">
+            <h4>Font Size</h4>
+            <div>
+                <h6>Aa</h6>
+            <div class="choose-size">
+                <span class="font-size-1"></span>
+                <span class="font-size-2"></span>
+                <span class="font-size-3 active"></span>
+                <span class="font-size-4"></span>
+                <span class="font-size-5"></span>
+            </div>
+            <h3>Aa</h3>
+            </div>
+        </div>
+
+        <!-- -------- Primary Colors ---------- -->
+        <div class="color">
+            <h4>Color</h4>
+            <div class="choose-color">
+                <span class="color-1 active"></span>
+                <span class="color-2 "></span>
+                <span class="color-3 "></span>
+                <span class="color-4 "></span>
+                <span class="color-5 "></span>
+            </div>
+        </div>
+
+        <!-- -------- Background Colors ---------- -->
+        <div class="background">
+            <h4>Background</h4>
+            <div class="choose-bg">
+                <div class="bg-1 active">
+                    <span></span>
+                    <h5 for="bg-1">Light</h5>
+                </div>
+                <div class="bg-2">
+                    <span></span>
+                    <h5 for="bg-2">Dim</h5>
+                </div>
+                <div class="bg-3">
+                    <span></span>
+                    <h5 for="bg-3">Lights Out</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        
+        <script src="/public/js/main.js" async defer></script>
+    </body>
+</html>
